@@ -28,11 +28,18 @@ const Signupp = (props) => {
     if (passcode !== cpasscode) {
       showAlert("Confirm password and password should be same...", "danger");
     } else {
-      showAlert("Account created Successully", "success");
       const json = await response.json();
       console.log(json);
-      localStorage.setItem("token", json.authToken);
-      history("/notes");
+      
+      if (json.success) {
+        showAlert("Account created Successfully", "success");
+        localStorage.setItem("token", json.authToken);
+        history("/notes");
+      } else {
+        showAlert("User already exists with the same email", "danger");
+        history("/signup");
+      }
+      
     }
   };
   const onChange = (e) => {

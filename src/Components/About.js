@@ -10,7 +10,7 @@ export const About = () => {
     padding: '20px', // Add padding for spacing
   };
   return (
-    <div className="container mt-5">
+    <div className="container" style={{marginTop:"5rem"}}>
       <h2>About Us</h2>
       <div className="container" style={containerStyle}>
       <h1 className="mt-5 mb-4">Your Ultimate To-Do List Companion - Streamline Your Productivity!</h1>
@@ -55,7 +55,7 @@ export const About = () => {
             <div className="card-body">
               <h5 className="card-title">Mohammad Nafis Raza</h5>
               <p className="card-text">
-              Hello connections, I'm currently pursuing Bachelors degree in Mechanical Engineering at IIT(ISM), Dhanbad. I'm good in Competitive Programming and DSA and active on various coding platforms like Codeforces, GFG, LeetCode and Atcoder. I am currently rated specialist on Codeforces. Also, I am a good in frontend development and currently learning ReactJS. I worked as a frontend developer at SAIRC and currently interning at WorkEase as a Frontend Developer. Also I work as a volunteer at Kartavya, a student run NGO of IIT(ISM) Dhanbad.
+              Hola Peeps, I'm currently pursuing Bachelors degree in Mechanical Engineering at IIT(ISM), Dhanbad. I'm good in Competitive Programming and DSA and active on various coding platforms like Codeforces, GFG, LeetCode and Atcoder. I am currently rated specialist on Codeforces. Also, I am a good in frontend development and currently learning ReactJS. I worked as a frontend developer at SAIRC and currently interning at WorkEase as a Frontend Developer. Also I work as a volunteer at Kartavya, a student run NGO of IIT(ISM) Dhanbad.
               </p>
               <p className="card-text">
                 <small className="text-muted">Contact: mohammad.nafis.raza.28@gmail.com</small>
